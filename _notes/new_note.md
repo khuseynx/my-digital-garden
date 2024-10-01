@@ -2,4 +2,4 @@
 title: new_note
 ---
 
-hey hey [[consistency]]
+hey hey [[consistency|Consistency is key]]
