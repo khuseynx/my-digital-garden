@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Обо мне
+title: Об авторе
 permalink: /about
 ---
 
@@ -11,5 +11,5 @@ permalink: /about
 Контакты для связи:
 - [Telegram](https://t.me/Khuseynx)
 - [Instagram](https://www.instagram.com/khuseynx)
-- Mail_2: huseyn1237@mail.ru
-- Mail_2: khsam1237@gmail.com
+- Mail 1: huseyn1237@mail.ru
+- Mail 2: khsam1237@gmail.com
