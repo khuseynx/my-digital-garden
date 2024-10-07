@@ -26,7 +26,7 @@ permalink: /
 - [[Мои конспекты]]
 - [[Мои рецензии]]
 
-#### Random note from my site
+#### Случайная заметка с сайта
 
 {% assign random_note = site.notes | sample %}
 
