@@ -5,8 +5,9 @@ layout: default
 <article>
   <div>
     <h1>{{ page.title }}</h1>
-    <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{% if page.type != 'pages' %}
-      Последнее обновление от: {{ page.last_modified_at | date: "%Y %B %-d" | russian_date }}
+    <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">
+      {% if page.type != 'pages' %}
+        Последнее обновление от: {{ page.last_modified_at | date: "%Y %B %-d" | russian_date }}
       {% endif %}
     </time>
   </div>
@@ -17,6 +18,20 @@ layout: default
       <p>Интересны похожие темы? Подписывайся на мой <a href="https://t.me/khuseynx"><strong>Telegram📨</strong></a>, чтобы оставаться на связи!</p>
     </content>
   </div>
+
+  <!-- Related Posts Section -->
+  <div class="related-posts">
+    <h3>Возможно, вам понравится:</h3>
+    <ul>
+      {% assign related_posts = site.notes | where_exp: "note", "note.tags contains page.tags[0]" %}
+      {% for post in related_posts limit: 5 %}
+        {% if post.url != page.url %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <!-- End of Related Posts Section -->
 </article>
 
 <hr>
