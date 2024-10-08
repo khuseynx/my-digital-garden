@@ -31,10 +31,37 @@ time {
 }
 
 footer {
-  margin: 2em 0;
-  font-size: 0.8em;
-  color: mix($color-text, white, 80%);
+  margin: 1em 0;
+  font-size: inherit;
+  font-family: inherit;
+  color: $color-text;
   padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+footer a, footer p {
+  font-size: inherit; 
+  font-family: inherit;
+  color: inherit;
+}
+
+.footer-line {
+  border: 0; /* Remove the default border style */
+  height: 1px; /* Set the thickness of the line */
+  background: $color-border; /* Use your existing border color or choose a different color */
+  margin-bottom: 1.5em; /* Space between the line and the footer */
+  margin-top: 2em; /* Space above the line */
+  width: 100%;
+}
+
+
+footer img {
+  display: block;
+  margin: 0;
+  border-radius: $border-radius;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 img {
@@ -109,19 +136,6 @@ nav {
   margin: 1em 0 3em;
 }
 
-#notes-entry-container {
-  display: grid;
-  grid-gap: 2em;
-  grid-template-areas:
-    "content"
-    "side";
-
-  @media (min-width: 700px) {
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas: "content side";
-  }
-}
-
 .backlink-box {
   background: $color-box-background;
   padding: 1em;
@@ -144,35 +158,4 @@ code {
 .invalid-link-brackets {
   color: #ccc;
   cursor: help;
-}
-
-.related-posts {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.related-posts h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-
-.related-posts ul {
-    list-style: none;
-    padding: 0;
-}
-
-.related-posts ul li {
-    margin-bottom: 8px;
-}
-
-.related-posts ul li a {
-    color: #007acc;
-    text-decoration: none;
-}
-
-.related-posts ul li a:hover {
-    text-decoration: underline;
 }
