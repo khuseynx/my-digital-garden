@@ -20,6 +20,7 @@ layout: default
 
   <!-- Related Posts Section -->
   <div class="related-posts">
+    <hr>
     <h3>Возможно, вам понравится:</h3>
     <ul>
       {% assign related_posts = site.notes | where_exp: "note", "note.tags contains page.tags[0]" %}
@@ -32,5 +33,3 @@ layout: default
   </div>
   <!-- End of Related Posts Section -->
 </article>
-
-<hr>
