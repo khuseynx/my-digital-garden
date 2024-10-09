@@ -134,10 +134,13 @@ a {
 
 nav {
   margin: 1em 0 3em;
+  max-width: 1000px; /* Matches the body max-width */
+  margin-left: auto;  /* Center the navigation */
+  margin-right: auto;
   div {
     display: flex;
     align-items: center;
-    justify-content: flex-end; 
+    justify-content: space-between; /* Adjust space between items */
   }
 
   a {
@@ -145,6 +148,7 @@ nav {
     margin-left: 10px; 
   }
 }
+
 
 code {
   background: #f5f5f5;
