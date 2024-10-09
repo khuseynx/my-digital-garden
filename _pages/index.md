@@ -4,24 +4,24 @@ title: Home
 id: home
 permalink: /
 ---
-## Содержание сайта
+### Содержание сайта
 - [[Мои статьи]]
 - [[Мои рассказы]]
 - [[Мои конспекты]]
 - [[Мои рецензии]]
-- [[ИГРА СТОИТ СВЕЧ]] (_моя книга, пока на редактуре_)
+- [[Игра стоит свеч]] (_моя книга, пока на редактуре_)
 <br>
 <br>
 
 ---
-## Случайная заметка с сайта
+### Случайная заметка с сайта
 {% assign random_note = site.notes | sample %}
 - <a href="{{ random_note.url }}" class="internal-link">{{ random_note.title }}</a>
 <br>
 <br>
 
 ---
-## Недавно обновленные заметки
+### Недавно обновленные заметки
 <ul>
   {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
   {% for note in recent_notes limit: 7 %}

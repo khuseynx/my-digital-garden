@@ -134,12 +134,16 @@ a {
 
 nav {
   margin: 1em 0 3em;
-}
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+  }
 
-.backlink-box {
-  background: $color-box-background;
-  padding: 1em;
-  border-radius: $border-radius;
+  a {
+    white-space: nowrap; 
+    margin-left: 10px; 
+  }
 }
 
 code {
