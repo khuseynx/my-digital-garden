@@ -16,7 +16,7 @@ body {
   overflow-x: hidden;
   color: $color-text;
   font-size: 1rem;
-  max-width: 1000px;
+  max-width: 710px;
   padding: 0 20px;
 
   @media (min-width: 820px) {
@@ -40,7 +40,7 @@ footer {
 }
 
 footer a, footer p {
-  font-size: inherit; 
+  font-size: inherit;
   font-family: inherit;
   color: inherit;
 }
@@ -133,7 +133,7 @@ a {
 }
 
 nav {
-  margin: 1em 0 3em;
+  margin: 1em 0;
   max-width: 1000px; /* Matches the body max-width */
   margin-left: auto;  /* Center the navigation */
   margin-right: auto;
@@ -144,8 +144,8 @@ nav {
   }
 
   a {
-    white-space: nowrap; 
-    margin-left: 10px; 
+    white-space: nowrap;
+    margin-left: 10px;
   }
 }
 
