@@ -13,13 +13,11 @@ permalink: /
 - [[Мои челленджи и проекты]]
 - [[Игра стоит свеч]] (_моя книга, пока на редактуре_)
 <br>
-<br>
 
 ---
 ### Случайная заметка с сайта
 {% assign random_note = site.notes | sample %}
 - <a href="{{ random_note.url }}" class="internal-link">{{ random_note.title }}</a>
-<br>
 <br>
 
 ---

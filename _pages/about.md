@@ -21,7 +21,6 @@ permalink: /about
 - Пытаюсь оптимально оптимизировать свои заметки в [Obsidian](https://obsidian.md/).
 - Дорабатываю свой сайт [khuseyn.com](https://khuseyn.com/) (вы сейчас находитесь на нем).
 <br>
-<br>
 
 ---
 
