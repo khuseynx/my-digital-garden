@@ -73,11 +73,13 @@ img {
 }
 
 blockquote {
-  padding: 1.5em;
+  padding: 0.5em;
   margin: 0;
-  font-size: 0.88em;
-  background: $color-box-background;
-  border-radius: $border-radius;
+  font-size: 0.9em;
+  background: none;
+  border-left: 4px solid rgb(224, 33, 33);
+  padding-left: 1em;
+  color: $color-text;
 
   p {
     margin: 0;
