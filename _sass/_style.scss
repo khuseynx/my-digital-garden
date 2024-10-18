@@ -167,3 +167,10 @@ code {
   color: #ccc;
   cursor: help;
 }
+
+time {
+  display: block;
+  color: $color-subtext;
+  margin: 0.5em 0 1em;
+  font-size: 0.9rem;  // Adjust this value to make the text smaller
+}
