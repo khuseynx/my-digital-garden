@@ -1,4 +1,5 @@
 ---
+title: "Откажись от кофе - купи BMW!"
 tags:
   - writings/articles
   - web
