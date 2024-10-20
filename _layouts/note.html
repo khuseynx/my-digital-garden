@@ -18,18 +18,19 @@ layout: default
     </content>
   </div>
 
-  <!-- Related Posts Section -->
-  <div class="related-posts">
-    <hr>
-    <h3>Возможно, вам понравится:</h3>
-    <ul>
-      {% assign related_posts = site.notes | where_exp: "note", "note.tags contains page.tags[0]" %}
-      {% for post in related_posts limit: 5 %}
-        {% if post.url != page.url %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-  <!-- End of Related Posts Section -->
+<!-- Related Posts Section -->
+<div class="related-posts">
+  <hr>
+  <h3>Возможно, вам понравится:</h3>
+  <ul>
+    {% assign related_posts = site.notes | where_exp: "note", "note.tags contains page.tags[0]" %}
+    {% assign shuffled_posts = related_posts | sample: 5 %}
+    {% for post in shuffled_posts %}
+      {% if post.url != page.url %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+<!-- End of Related Posts Section -->
 </article>
