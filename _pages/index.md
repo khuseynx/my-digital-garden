@@ -16,7 +16,8 @@ permalink: /
 
 ---
 ### Случайная заметка с сайта
-{% assign random_note = site.notes | sample %}
+{% assign filtered_notes = site.notes | where_exp: "note", "note.tags contains 'writings/summaries/meditations' == false" %}
+{% assign random_note = filtered_notes | sample %}
 - <a href="{{ random_note.url }}" class="internal-link">{{ random_note.title }}</a>
 <br>
 
